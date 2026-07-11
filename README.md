@@ -5,14 +5,12 @@
 Built with Vite, React, Three.js (`@react-three/fiber` + `@react-three/drei`), Tailwind v4, Zustand, and Vitest.
 
 ## What it does
-
 - Procedural brain-like mesh with gyri/sulci-ish displacement.
 - Nine Brodmann area bubbles positioned on a left hemisphere layout: hover to highlight, click to select.
 - Three heatmap modes — `activation`, `metabolism`, `pathology` — that recolor regions from a cyan/orange/magenta scale.
 - Orbit camera, zoom, pan. Auto-rotating idle view. When you click a region, orbit controls unlock so a visitor can inspect it.
 
 ## Source layout
-
 ```
 src/
   App.jsx                  # root canvas + overlays + control panel
@@ -32,14 +30,12 @@ src/
 ```
 
 ## Dev
-
 ```bash
 npm install
 npm run dev
 ```
 
 ## Tests
-
 ```bash
 npm test
 ```
@@ -50,11 +46,9 @@ Currently covers:
 - brain store actions, hover/selected state transitions
 
 ## Caveats
-
 - Single-hemisphere scaffold, not scientifically accurate.
 - Region positions are illustrative, not Talairach.
-- Readme text is intentionally student/developer tone.
+- This is an engineering demo, not a clinical visualization tool.
 
 ## Why the repo exists
-
 I wanted a clean starting point for building 3D neuro viz tooling in React without importing a full atlas in one pass. This keeps the shell usable, the interactions obvious, and the data/UI concerns separated.
