@@ -50,5 +50,7 @@ Currently covers:
 - Region positions are illustrative, not Talairach.
 - This is an engineering demo, not a clinical visualization tool.
 
+Live demo: https://cerebra-pi.vercel.app
+
 ## Why the repo exists
 I wanted a clean starting point for building 3D neuro viz tooling in React without importing a full atlas in one pass. This keeps the shell usable, the interactions obvious, and the data/UI concerns separated.
